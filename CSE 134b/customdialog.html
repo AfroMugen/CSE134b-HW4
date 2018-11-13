@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Custom Dialogs (Buttons)</title>
+        <meta name="description" content="A bunch of buttons.">
+        <script type="text/javascript" src="DOMPurify-master/dist/purify.min.js"></script>
+    </head>
+    
+    <body>
+        <h1>Custom Dialogs</h1>
+        <button id="AlertBut">Alert</button>
+        <button id="ConfirmBut" type="button">Confirm</button>
+        <button id="PromptBut">Prompt</button>
+        
+        <hr>
+        
+        <output id="Output"></output>
+        
+        <!-- Custom Alert -->
+        <dialog id="alertDialog">
+            Alert Passed<br>
+            <button id="alertOk">Ok</button>
+        </dialog>
+        
+        <!-- Custom Confirm -->
+        <dialog id="confirmDialog">
+            Do you confirm this?<br>
+            <button id="confirmTrue">Confirm</button>
+            <button id="confirmFalse">Cancel</button>
+        </dialog>
+        
+        <!-- Custom Prompt -->
+        <dialog id="promptDialog">
+            What is your name?<br>
+            <input id="promptInput" type="text">
+            <button id="promptTrue">Confirm</button>
+            <button id="promptFalse">Cancel</button>
+        </dialog>
+        
+        <script type="text/javascript" src="customdialog.js"></script>
+    </body>
+</html>
